@@ -97,7 +97,7 @@ export class GrokClient {
 
       return response as GrokResponse;
     } catch (error: any) {
-      throw new Error(`Grok API error: ${error.message}`);
+      throw new Error(`API error: ${error.message}`);
     }
   }
 
@@ -131,7 +131,7 @@ export class GrokClient {
         yield chunk;
       }
     } catch (error: any) {
-      throw new Error(`Grok API error: ${error.message}`);
+      throw new Error(`API error: ${error.message}`);
     }
   }
 
